@@ -27,7 +27,7 @@ The MF-based algorithm used is Singular Vector Decomposition (SVD).
 GridSearchCV is used to find the best configuration of the number of iterations of the stochastic gradient descent procedure, the learning rate and the regularization term.
 Based on GridSearch CV, the RMSE value is 0.9530. The RMSE value of the holdout sample is 0.9430. The MSE and the MAE values are 0.889 and 0.754.
 
-## Neural- based Collaborative Filtering — Data Preprocessing
+## Neural-based Collaborative Filtering — Data Preprocessing
 The data file that consists of users, movies, ratings and timestamp is read into a pandas dataframe for data preprocessing.
 Movies and users need to be enumerated to be used for modeling. Variables with the total number of unique users and movies in the data are created, and then mapped back to the movie id and user id.
 The minimum and maximum ratings present in the data are found. Ratings are then normalized for ease of training the model.
@@ -46,3 +46,15 @@ The MSE and MAE values from the neural-based model are 0.075 and 0.224.
 
 # Results Analysis and Conclusion
 Neural-based collaborative filtering model has shown the highest accuracy compared to memory-based k-NN model and matrix factorization-based SVD model.
+
+
+# References
+Sedhain et al. Social collaborative filtering for cold-start recommendations. RecSys, 2014.
+
+Su et al. A survey of collaborative filtering techniques. Advances in artificial intelligence, 2009.
+
+Cacheda et al. Comparison of collaborative filtering algorithms: Limitations of current techniques and proposals for scalable, high-performance recommender systems. ACM TWEB, 2011.
+
+Yang et al. A survey of collaborative filtering based social recommender systems. COMPUT COMMUN, 2014.
+
+Leo Siu-Yin article: https://bit.ly/2RFllUt
